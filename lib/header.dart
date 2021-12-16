@@ -16,7 +16,7 @@ class Header extends StatelessWidget with PreferredSizeWidget{
       actions: const [
         Padding(
           padding: EdgeInsets.all(8.0),
-          child: Icon(Icons.share),
+          child: Icon(Icons.car),
         ),
         Padding(
           padding: EdgeInsets.only(right:15.0),
