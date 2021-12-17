@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'header.dart';
 // import 'footer.dart';
 
-void main(){
+void main() {
   runApp(App());
 }
 
@@ -11,20 +11,18 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          appBar: Header(),
-          body: Center(
-              child: Text('まじでわからなすぎ；；；謎々謎')
-          ),
-          // bottomNavigationBar: BottomNavigationBar(
-          //     items: const<BottomNavigationBarItem>[
-          //       BottomNavigationBarItem(icon: (
-          //       icon: Icon(Icons.home),
-
-          
-        )
-    );
+            appBar: const Header(),
+            body: const Center(child: Text('まじでわからなすぎ；；；謎々謎')),
+            bottomNavigationBar: BottomNavigationBar(
+              items: const [
+                BottomNavigationBarItem(
+                    title: Text("hoge"), icon: Icon(Icons.home)),
+                BottomNavigationBarItem(
+                    title: Text("hoge"), icon: Icon(Icons.home)),
+              ],
+            )));
   }
 }
